@@ -1,0 +1,44 @@
+body {
+	background-color: #F1F1F1;
+	font-family: 'Helvetica Neue', Helvetica, Arial, 
+sans-serif;
+}
+#info {
+	min-width: 200px;
+	max-width: 400px;
+	margin: 10% auto 0 auto;
+	text-align: center;
+	text-rendering: optimizelegibility;
+}
+#info > h2 {
+	font-size: 30px;
+	font-weight: normal;
+}
+#info > p {
+	font-size: 20px;
+	font-weight: normal;
+	color: #333;
+}
+a {
+	color: #333;
+	text-decoration: none;
+	border-bottom: 1px dotted #333;
+}
+
+.left-align {
+	text-align: left;
+	padding: 0 54px;
+}
+
+#site-footer {
+	text-align: center;
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+	font-size: 14px;
+}
+
+#site-footer div {
+	height: 20px;
+	padding-bottom: 10px;
+}
