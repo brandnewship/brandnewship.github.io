@@ -82,9 +82,14 @@ margin-left: -250px;*/
 	padding: 0 80px;
 }
 
+.service-list ul {
+	padding: 0;
+}
+
 .service-list li {
 	text-decoration: none;
 	display: inline;
+	line-height: 25px;
 }
 
 .service-list li:before {
