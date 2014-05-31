@@ -1,0 +1,30 @@
+.contact {
+    /* background: rgba(43, 22, 36, .4); */
+    width: 45%;
+    margin: 75px auto 0;
+    display: block;
+    text-align: center;
+    color: #fafafa;
+    font-family: 'lato', sans-serif;
+    text-rendering: optimizelegibility;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 10px 0 40px;
+    border-radius: 3px;
+
+
+
+    > a {
+        font-size: .8em;
+        color: #fff;
+        text-decoration: none;
+        border: 2px solid #fff;
+        border-radius: 3px;
+        padding: 5px 35px;
+        @include transition (all 0.3s ease-in-out);
+        &:hover {
+            color: #2b1624;
+            background: #fff;
+        }
+    }
+}
