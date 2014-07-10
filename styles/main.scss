@@ -3,7 +3,7 @@
 @import 'contact';
 
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
     background: #422a3a;
@@ -18,28 +18,38 @@ body {
     padding: 0;
     background-attachment: fixed;
     top: 0;
+    .homepage-logo {
+        width: 170px;
+        margin: 0 auto;
+        position: fixed;
+        top: 260px;
+        left: 0;
+        right: 0;
+    }
+    .title-box {
+        font-family: 'lato', sans-serif;
+        font-size: 5.5em;
+        color: #422a3a;
+        text-align: center;
+        width: 100%;
+        position: fixed;
+        top: 346px;
+        // font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 3.3px;
+    }
+    > a {
+        text-align: center;
+        width: 100%;
+        position: fixed;
+        top: 390px;
+        margin: 0 auto;
+    }
 }
 
-#home > a {
-    text-align: center;
-    width: 100%;
-    position: fixed;
-    top: 730px;
-    margin: 0 auto;
-}
 
-#home img {
+#downArrow {
     width: 20px;
-}
-
-.title-box {
-    font-family: 'Pacifico', cursive;
-    font-size: 1.5em;
-    color: #422a3a;
-    text-align: center;
-    width: 100%;
-    position: fixed;
-    top: 295px;
 }
 
 .info {
