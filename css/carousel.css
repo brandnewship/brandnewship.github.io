@@ -8,6 +8,12 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+footer a{
+  color: #5a5a5a;
+}
+footer a:hover {
+  text-decoration: none;
+}
 
 
 /* CUSTOMIZE THE NAVBAR
