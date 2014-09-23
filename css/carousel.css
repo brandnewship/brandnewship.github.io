@@ -88,6 +88,26 @@ footer a:hover {
   height: 150px;
 }
 
+.call-to-action {
+  text-align: center;
+}
+.call-to-action .featurette-heading {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.call-to-action a.link{
+  border: 2px solid #8d8d8d;
+  border-radius: 4px;
+  color: #5d5d5d;
+  padding: 10px 20px;
+}
+
+.call-to-action a.link:hover {
+  text-decoration: none;
+}
+
+
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
