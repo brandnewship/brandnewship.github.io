@@ -1,17 +1,26 @@
-## Global Nav
+### Global Nav
 - About Us
+- Services
 - Work
 - Contact (on home?)
 
-## Title
-- Making the digital human
+### Title
+- making the digital. human.
 - We turn ideas into reality
-## Subtitle
-## CTA
 
-## Intro
+### Subtitle
+### CTA
 
+### Intro
 
+### Services Offered
+- Web Design & Development 
+- App Design & Development 
+- Branding and Logo Design 
+- UI/UX Design 
+- Custom Marketing Solutions 
+- Project Management 
+- Ideation Guidance
 
 
 Technology / Design
