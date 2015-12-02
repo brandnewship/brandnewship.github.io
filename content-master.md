@@ -58,6 +58,8 @@ New copy
 - Email newsletter
 - What don't we want to do
 
+http://tympanus.net/Blueprints/ZoomSlider/
+
 Homepage content examples
 http://aug.co/
 Focus Lab - http://focuslabllc.com/ 
