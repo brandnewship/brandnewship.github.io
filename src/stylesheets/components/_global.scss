@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Salome';
+  src: url('/fonts/salome-webfont.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/salome-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/salome-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/salome-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/salome-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+$white: #fff;
+$purple: #422A3A;
+$purple-dark: #251821;
+$purple-light: #57384D;
+
+body {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: $white;
+}

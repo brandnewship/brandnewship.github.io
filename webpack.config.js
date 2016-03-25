@@ -43,6 +43,11 @@ var config = {
         loader: 'style!css!sass'
        }
     ]
+  },
+  sassLoader: {
+    includePaths: [
+      path.join(__dirname, 'node_modules/support-for/sass')
+    ]
   }
 };
 
