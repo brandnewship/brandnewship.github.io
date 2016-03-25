@@ -1,6 +1,24 @@
+.header {
+  background: linear-gradient($purple-light, $purple);
+  height: 400px;
+  padding: 20px 24px;
+}
+
+
 .hero {
-  background: linear-gradient($purple, $purple-light);
-  h1 {
+
+  &__title {
     font-family: 'Salome', serif;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    line-height: 52px;
+  }
+}
+
+.menu {
+  &__title {
+    text-transform: uppercase;
+    font-weight: 300;
+
   }
 }
