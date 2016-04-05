@@ -40,11 +40,7 @@ var config = {
       },
       {
         test: /\.scss$/,
-        loaders: [
-          'style',
-          'css',
-          'autoprefixer?browsers=last 3 versions'
-        ]
+        loader: 'style!css!sass'
        },
        {
         test: /\.(jpe?g|png|gif|svg)$/i,
@@ -52,7 +48,7 @@ var config = {
           'url?limit=8192',
           'img'
         ]
-      },
+    },
     ]
   },
   sassLoader: {
