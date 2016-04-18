@@ -1,5 +1,5 @@
 .header {
-  background-image: require("../images/hero-image.jpg");
+  background-image: url('/hero-image.jpg');
   background: linear-gradient($purple-light, $purple);
   height: 400px;
   padding: 20px 24px;

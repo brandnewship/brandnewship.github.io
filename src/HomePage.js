@@ -3,7 +3,10 @@ var React = require('react');
 module.exports = React.createClass({
   render: function () {
     return (
-      <Header />
+      <div>
+        <Header />
+        <BodySection />
+      </div>
     );
   }
 });
@@ -41,6 +44,20 @@ var HeroSection = React.createClass({
     );
   }
 });
+
+var BodySection = React.createClass({
+  render: function() {
+    return (
+      <div className="body">
+        <div className="body__title">
+          <h1>What we do</h1>
+        </div>
+        <p>This is body content</p>
+      </div>
+    );
+  }
+});
+
 
 
 
