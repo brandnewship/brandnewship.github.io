@@ -54,6 +54,9 @@ body {
   height: 700px;
   margin: 0;
   padding: 50px 0 0;
+  @media (max-width: 780px) {
+    height: 550px;
+  }
   &__logo {
       width: 100px;
       margin: 0 auto 30px;
@@ -80,6 +83,11 @@ body {
   }
   &__subtitle {
       color: $white;
+      @media (max-width: 780px) {
+        text-align: left;
+        max-width: 270px;
+        margin: 5px auto;
+      }
   }
    &__subtitle-2 {
       color: $white;
@@ -90,6 +98,9 @@ body {
   &__cta {
       margin: 80px auto 0;
       display: block;
+      @media (max-width: 780px) {
+        margin-top: 50px;
+      }
   }
 }
 
@@ -102,6 +113,14 @@ body {
   &__title {
     font-size: 27px;
     text-transform: uppercase;
+    font-weight: 300;
+  }
+  &__subtitle {
+    font-size: 16px;
+    text-transform: uppercase;
+        letter-spacing: .3px;
+    line-height: 28px;
+
   }
   &__body {
     font-size: 18px;
@@ -254,6 +273,7 @@ body {
   color: $white;
   background: $purple;
   padding: 15px 0;
+  font-family: $lato;
   div {
     height: 20px;
     padding-bottom: 10px;
