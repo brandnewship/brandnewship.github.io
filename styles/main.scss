@@ -2,130 +2,212 @@
 @import 'animate';
 @import 'contact';
 
+@font-face {
+  font-family: 'Salome';
+  src: url('/fonts/salome-webfont.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/salome-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/salome-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/salome-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/salome-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+$white: #fafafa;
+$purple: #422a3a;
+$lato: 'Lato', Helvetica, Arial, sans-serif;
+$salome: 'Salome', serif;
+
 body {
-    font-family: 'Lato', Helvetica, Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #422a3a;
+  margin: 0;
+  padding: 0;
 }
 
-#home {
-    background: url("background.jpg") no-repeat top center;
-    background-size: cover;
+.button, button {
+  background: $white;
+  color: $purple;
+  width: 240px;
+  font-family: $lato;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  &:hover {
+  }
+}
+
+.subtitle {
+  font-family: $lato;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2.2px;
+}
+
+.hero {
+  background: url("images/hero-bg.jpg") no-repeat top center;
+  background-size: cover;
+  background-color: $purple;
+  width: 100%;
+  height: 700px;
+  margin: 0;
+  padding: 50px 0 0;
+  &__logo {
+      width: 100px;
+      margin: 0 auto 30px;
+      display: block;
+  }
+  &__title {
+      font-family: 'Salome', serif;
+      font-size: 3.3em;
+      text-align: center;
+      color: $white;
+      width: 70%;
+      text-transform: uppercase;
+      letter-spacing: 3.3px;
+      line-height: 72px;
+      margin: 110px auto 0;
+  }
+  &__subtitle {
+      color: $white;
+  }
+   &__subtitle-2 {
+      color: $white;
+  }
+  &__cta {
+      margin: 80px auto 0;
+      display: block;
+  }
+}
+
+.introduction {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  background: $white;
+  color: $purple;
+  padding: 24px;
+  text-align: center;
+  &__title {
+    font-size: 27px;
+    text-transform: uppercase;
+  }
+  &__body {
+    font-size: 18px;
+    font-weight: 300;
+    width: 660px;
+    margin: 20px auto;
+    letter-spacing: .3px;
+    line-height: 28px;
+  }
+}
+
+.case-studies {
+  color: $purple;
+  position: relative;
+
+  .study-one {
+    height: 500px;
+    margin: 70px 24px 0px 0px;
+    &__image {
+      background: url("images/snapp-digital.png") no-repeat left center;
+      width: 100%;
+      height: 400px;
+      background-size: contain;
+      position: absolute;
+      left: -100px;
+    }
+    &__text {
+      margin-top: 60px;
+      position: absolute;
+      margin-left: 540px;
+    }
+    &__title {
+      font-family: $salome;
+      font-size: 40.5px;
+    }
+    &__body {
+      font-family: $lato;
+      font-size: 18px;
+      font-weight: 300;
+      letter-spacing: .2px;
+      line-height: 28px;
+      width: 80%;
+    }
+    &__link {
+      font-family: $lato;
+    }
+  }
+
+  .study-two {
+    height: 500px;
+    &__image {
+      background: url("images/knowledgepost.png") no-repeat right center;
+      width: 100%;
+      height: 400px;
+      background-size: contain;
+      position: absolute;
+    }
+    &__text {
+      position: absolute;
+      margin-right: 640px;
+      margin-top: 90px;
+      margin-left: 140px;
+    }
+    &__title {
+      font-family: $salome;
+      font-size: 40.5px;
+    }
+    &__body {
+      font-family: $lato;
+      font-family: $lato;
+      font-size: 18px;
+      font-weight: 300;
+      letter-spacing: .2px;
+      line-height: 28px;
+    }
+    &__link {
+      font-family: $lato;
+    }
+  }
+}
+
+.about {
+    background: url("images/desk.jpg") no-repeat left center;
     height: 800px;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-attachment: fixed;
-    top: 0;
-    .homepage-logo {
-        width: 170px;
-        margin: 0 auto;
-        position: fixed;
-        top: 260px;
-        left: 0;
-        right: 0;
-    }
-    .title-box {
-        font-family: 'lato', sans-serif;
-        font-size: 5.5em;
-        color: #422a3a;
-        text-align: center;
-        width: 100%;
-        position: fixed;
-        top: 346px;
-        // font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 3.3px;
-    }
-    > a {
-        text-align: center;
-        width: 100%;
-        position: fixed;
-        top: 390px;
-        margin: 0 auto;
-    }
-}
-
-
-#downArrow {
-    width: 20px;
-}
-
-.info {
-    background: #422a3a;
+    width: 600px;
     position: relative;
-    width: 100%;
-    height: 600px;
+    &__intro {
+      background: $white;
+      padding: 20px;
+      position: relative;
+      left: 400px;
+      top: 200px;
+    }
+    &__title {
+      color: $purple;
+      font-family: $salome;
+    }
 }
 
-.info-box {
-    position: relative;
-    min-width: 200px;
-    width: 100%;
-    margin: 150px auto 0 auto;
-    text-align: center;
-    color: #fafafa;
+.footer {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 14px;
+  color: $white;
+  background: $purple;
+  padding: 15px 0;
+  div {
+    height: 20px;
+    padding-bottom: 10px;
+  }
+  a {
+    color: #b491a8;
+    text-decoration: none;
+    border-bottom: 1px dotted #b491a8;
     font-family: 'lato', sans-serif;
     text-rendering: optimizelegibility;
-    > p {
-        font-size: 4em;
-        font-weight: 700;
-        padding: 50px 4% 0;
-        text-align: center;
-        width: 735px;
-        margin: 0 auto;
-    }
-    > img {
-        width: 75px;
-        margin: 0 auto;
-    }
-    > h2 {
-        font-size: 30px;
-        font-weight: normal;
-    }
-    &.service-list {
-        margin: 0 auto;
-        ul {
-            padding: 0;
-        }
-        li {
-            text-decoration: none;
-            display: inline;
-            line-height: 25px;
-            &:before {
-                content: "/";
-                padding: 0px 7px 0px 5px;
-                color: #98748c;
-            }
-            &:first-child:before {
-                content: "";
-            }
-        }
-    }
-}
-
-
-
-#site-footer {
-    text-align: center;
-    bottom: 0;
-    position: absolute;
-    width: 300px;
-    margin: 0 auto;
-    font-size: 14px;
-    color: #765c6d;
-    div {
-        height: 20px;
-        padding-bottom: 10px;
-    }
-    a {
-        color: #b491a8;
-        text-decoration: none;
-        border-bottom: 1px dotted #b491a8;
-        font-family: 'lato', sans-serif;
-        text-rendering: optimizelegibility;
-    }
+  }
 }
 
 .already-visible {
@@ -149,7 +231,6 @@ body {
     border-radius: 1px;
 }
 
-
 //Media Queries
 @media (max-width: 1280px) {
   .info-box.service-list li {
@@ -170,4 +251,47 @@ body {
     .contact {
         width: 92%;
     }
+}
+
+
+
+.lite-text {
+    font-size: 0.7em;
+    font-weight: normal;
+}
+.lite-text a {
+    color: white;
+}
+#mc-prompt {
+    margin: 0;
+}
+#mce-EMAIL {
+    border: none;
+    width: 200px;
+    height: 20px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.65em;
+    font-weight: normal;
+    font-family: 'lato', sans-serif;
+}
+#mc-embedded-subscribe {
+    font-size: 0.6em;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    padding: 5px 74px;
+    background-color: transparent;
+    margin-top: 10px;
+}
+#site-footer {
+    padding-left: 15px;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #765c6d;
+    position: relative;
+    text-align: left;
 }
