@@ -2369,11 +2369,19 @@ body {
     font-size: 3.3em;
     text-align: center;
     color: #fafafa;
-    width: 70%;
+    max-width: 70%;
     text-transform: uppercase;
     letter-spacing: 3.3px;
     line-height: 72px;
     margin: 110px auto 0; }
+    @media (max-width: 780px) {
+      .hero__title {
+        font-size: 26px;
+        text-align: left;
+        line-height: 36px;
+        letter-spacing: 2.5px;
+        margin-top: 40px;
+        max-width: 270px; } }
   .hero__subtitle {
     color: #fafafa; }
   .hero__subtitle-2 {
@@ -2402,6 +2410,9 @@ body {
 .case-studies {
   color: #422a3a;
   position: relative; }
+  @media (max-width: 780px) {
+    .case-studies {
+      display: none; } }
   .case-studies .study-one {
     height: 500px;
     margin: 70px 24px 0px 0px; }
@@ -2473,7 +2484,7 @@ body {
     @media (max-width: 780px) {
       .about__intro {
         background: rgba(255, 255, 255, 0.8);
-        padding: 40px;
+        padding: 0;
         position: static;
         left: 0;
         top: 0; } }
@@ -2483,6 +2494,11 @@ body {
     font-size: 27px;
     line-height: 40px;
     letter-spacing: .2px; }
+    @media (max-width: 780px) {
+      .about__title {
+        max-width: 270px;
+        margin: 0 auto;
+        padding: 20px 0; } }
   .about__body {
     position: relative;
     left: 650px;
@@ -2490,7 +2506,8 @@ body {
     @media (max-width: 780px) {
       .about__body {
         background: rgba(255, 255, 255, 0.8);
-        position: static; } }
+        position: static;
+        padding: 0px 0 40px; } }
     .about__body p {
       color: #422a3a;
       font-family: "Lato", Helvetica, Arial, sans-serif;
@@ -2520,41 +2537,8 @@ body {
     font-family: 'lato', sans-serif;
     text-rendering: optimizelegibility; }
 
-.already-visible {
-  transform: translateY(0);
-  animation: none; }
-
-.show {
-  display: block; }
-
-.hide {
+#mc_embed_signup {
   display: none; }
-
-.hairline {
-  border-top: 1px solid #94818E;
-  display: block;
-  width: 60%;
-  margin: 50px auto 0;
-  border-radius: 1px; }
-
-@media (max-width: 1280px) {
-  .info-box.service-list li {
-    display: block; }
-    .info-box.service-list li:before, .info-box.service-list li:first-child:before {
-      content: "-"; } }
-@media (max-width: 800px) {
-  .info-box > p {
-    width: 92%;
-    font-size: 2em; }
-
-  .contact {
-    width: 92%; } }
-.lite-text {
-  font-size: 0.7em;
-  font-weight: normal; }
-
-.lite-text a {
-  color: white; }
 
 #mc-prompt {
   margin: 0; }
@@ -2578,13 +2562,3 @@ body {
   padding: 5px 74px;
   background-color: transparent;
   margin-top: 10px; }
-
-#site-footer {
-  padding-left: 15px;
-  bottom: 0;
-  width: 100%;
-  margin: 0 auto;
-  font-size: 14px;
-  color: #765c6d;
-  position: relative;
-  text-align: left; }
