@@ -95,7 +95,7 @@ body {
   &__body {
     font-size: 18px;
     font-weight: 300;
-    width: 660px;
+    max-width: 720px;
     margin: 20px auto;
     letter-spacing: .3px;
     line-height: 28px;
@@ -177,16 +177,55 @@ body {
     height: 800px;
     width: 600px;
     position: relative;
+    @media (max-width: 780px) {
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+    }
     &__intro {
-      background: $white;
-      padding: 20px;
+      background: #fff;
+      padding: 40px;
       position: relative;
       left: 400px;
       top: 200px;
+      @media (max-width: 780px) {
+        background: rgba(255,255,255, .8);
+        padding: 40px;
+        position: static;
+        left: 0;
+        top: 0;
+      }
+
     }
     &__title {
       color: $purple;
       font-family: $salome;
+      font-size: 27px;
+      line-height: 40px;
+      letter-spacing: .2px;
+    }
+    &__body {
+      @media (max-width: 780px) {
+        background: rgba(255, 255, 255, 0.8);
+        position: static;
+
+      }
+      position: relative;
+      left: 650px;
+      top: 230px;
+
+      p {
+              color: $purple;
+      font-family: $lato;
+              font-size: 18px;
+      font-weight: 400;
+      letter-spacing: .2px;
+      line-height: 28px;
+      @media (max-width: 780px) {
+        max-width: 270px;
+            margin: 0 auto;
+      }
+      }
     }
 }
 
