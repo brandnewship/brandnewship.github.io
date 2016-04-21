@@ -146,6 +146,7 @@ display: block;
   color: $purple;
   position: relative;
   &__subtitle {
+    display: none;
     font-size: 44px;
     text-transform: uppercase;
     letter-spacing: 1px;

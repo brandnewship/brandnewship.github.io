@@ -2440,6 +2440,7 @@ body {
   color: #422a3a;
   position: relative; }
   .case-studies__subtitle {
+    display: none;
     font-size: 44px;
     text-transform: uppercase;
     letter-spacing: 1px;
