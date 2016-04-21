@@ -2393,7 +2393,13 @@ body {
         max-width: 270px;
         margin: 5px auto; } }
   .hero__subtitle-2 {
-    color: #fafafa; }
+    color: #fafafa;
+    display: block;
+    margin-top: 10px; }
+    @media (max-width: 780px) {
+      .hero__subtitle-2 {
+        display: inline;
+        margin-top: 0; } }
   .hero__cta {
     margin: 80px auto 0;
     display: block; }
@@ -2419,7 +2425,7 @@ body {
   .introduction__body {
     font-size: 18px;
     font-weight: 300;
-    max-width: 720px;
+    max-width: 752px;
     margin: 20px auto;
     letter-spacing: .3px;
     line-height: 28px; }
@@ -2455,7 +2461,11 @@ body {
       line-height: 28px;
       width: 80%; }
     .case-studies .study-one__link {
-      font-family: "Lato", Helvetica, Arial, sans-serif; }
+      font-family: "Lato", Helvetica, Arial, sans-serif;
+      color: #422a3a;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-bottom: 2px solid #422a3a; }
   .case-studies .study-two {
     height: 500px; }
     .case-studies .study-two__image {
@@ -2480,7 +2490,11 @@ body {
       letter-spacing: .2px;
       line-height: 28px; }
     .case-studies .study-two__link {
-      font-family: "Lato", Helvetica, Arial, sans-serif; }
+      font-family: "Lato", Helvetica, Arial, sans-serif;
+      color: #422a3a;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-bottom: 2px solid #422a3a; }
 
 .about {
   background: url("images/desk.jpg") no-repeat left center;
@@ -2529,9 +2543,10 @@ body {
       color: #422a3a;
       font-family: "Lato", Helvetica, Arial, sans-serif;
       font-size: 18px;
-      font-weight: 400;
-      letter-spacing: .2px;
-      line-height: 28px; }
+      font-weight: 300;
+      letter-spacing: .4px;
+      line-height: 42px;
+      max-width: 70%; }
       @media (max-width: 780px) {
         .about__body p {
           max-width: 270px;
@@ -2552,7 +2567,6 @@ body {
     color: #b491a8;
     text-decoration: none;
     border-bottom: 1px dotted #b491a8;
-    font-family: 'lato', sans-serif;
     text-rendering: optimizelegibility; }
 
 #mc_embed_signup {

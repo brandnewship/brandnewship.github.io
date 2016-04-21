@@ -91,8 +91,11 @@ body {
   }
    &__subtitle-2 {
       color: $white;
+display: block;
+    margin-top: 10px;
       @media (max-width: 780px) {
-
+        display: inline;
+        margin-top: 0;
       }
   }
   &__cta {
@@ -118,14 +121,14 @@ body {
   &__subtitle {
     font-size: 16px;
     text-transform: uppercase;
-        letter-spacing: .3px;
+    letter-spacing: .3px;
     line-height: 28px;
 
   }
   &__body {
     font-size: 18px;
     font-weight: 300;
-    max-width: 720px;
+    max-width: 752px;
     margin: 20px auto;
     letter-spacing: .3px;
     line-height: 28px;
@@ -168,6 +171,10 @@ body {
     }
     &__link {
       font-family: $lato;
+      color: $purple;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-bottom: 2px solid $purple;
     }
   }
 
@@ -200,6 +207,10 @@ body {
     }
     &__link {
       font-family: $lato;
+      color: $purple;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-bottom: 2px solid $purple;
     }
   }
 }
@@ -255,9 +266,10 @@ body {
               color: $purple;
       font-family: $lato;
               font-size: 18px;
-      font-weight: 400;
-      letter-spacing: .2px;
-      line-height: 28px;
+      font-weight: 300;
+      letter-spacing: .4px;
+    line-height: 42px;
+    max-width: 70%;
       @media (max-width: 780px) {
         max-width: 270px;
             margin: 0 auto;
@@ -282,7 +294,6 @@ body {
     color: #b491a8;
     text-decoration: none;
     border-bottom: 1px dotted #b491a8;
-    font-family: 'lato', sans-serif;
     text-rendering: optimizelegibility;
   }
 }
