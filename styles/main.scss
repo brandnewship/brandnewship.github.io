@@ -32,8 +32,13 @@ body {
   text-decoration: none;
   padding: 12px;
   border-radius: 4px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   &:hover {
+  }
+  &--purple {
+    background: $purple;
+    color: $white;
   }
 }
 
@@ -43,7 +48,7 @@ body {
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 300;
-  letter-spacing: 2.2px;
+  letter-spacing: 1.2px;
 }
 
 .hero {
@@ -78,14 +83,16 @@ body {
         line-height: 36px;
         letter-spacing: 2.5px;
         margin-top: 40px;
-        max-width: 270px;
+        max-width: 100%;
+        padding: 0 24px;
       }
   }
   &__subtitle {
       color: $white;
       @media (max-width: 780px) {
         text-align: left;
-        max-width: 270px;
+        max-width: 100%;
+        padding: 0 24px;
         margin: 5px auto;
       }
   }
@@ -138,12 +145,27 @@ display: block;
 .case-studies {
   color: $purple;
   position: relative;
+  &__subtitle {
+    font-size: 44px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 80px;
+    margin-bottom: 100px;
+  }
   @media (max-width: 780px) {
     display: none;
   }
   .study-one {
     height: 500px;
     margin: 70px 24px 0px 0px;
+    @media (max-width: 780px) {
+      margin: 0 auto;
+      padding: 0 24px;
+    }
     &__image {
       background: url("images/snapp-digital.png") no-repeat left center;
       width: 100%;
@@ -151,11 +173,21 @@ display: block;
       background-size: contain;
       position: absolute;
       left: -100px;
+      @media (max-width: 780px) {
+        left: 0;
+        background-position: top;
+        height: 100%;
+      }
     }
     &__text {
       margin-top: 60px;
       position: absolute;
       margin-left: 540px;
+      @media (max-width: 780px) {
+        margin-left: auto;
+        position: static;
+        margin-top: 0;
+      }
     }
     &__title {
       font-family: $salome;
@@ -180,6 +212,10 @@ display: block;
 
   .study-two {
     height: 500px;
+    @media (max-width: 780px) {
+      margin: 0 auto;
+      padding: 0 24px;
+    }
     &__image {
       background: url("images/knowledgepost.png") no-repeat right center;
       width: 100%;
@@ -216,7 +252,7 @@ display: block;
 }
 
 .about {
-    background: url("images/desk.jpg") no-repeat left center;
+    background: url("images/ship-1.jpg") no-repeat left center;
     height: 800px;
     width: 600px;
     position: relative;
@@ -253,28 +289,31 @@ display: block;
       }
     }
     &__body {
+      position: relative;
+      left: 650px;
+      top: 230px;
       @media (max-width: 780px) {
         background: rgba(255, 255, 255, 0.8);
         position: static;
         padding: 0px 0 40px;
       }
-      position: relative;
-      left: 650px;
-      top: 230px;
-
       p {
-              color: $purple;
-      font-family: $lato;
-              font-size: 18px;
-      font-weight: 300;
-      letter-spacing: .4px;
-    line-height: 42px;
-    max-width: 70%;
-      @media (max-width: 780px) {
-        max-width: 270px;
-            margin: 0 auto;
+        color: $purple;
+        font-family: $lato;
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: .4px;
+        line-height: 42px;
+        max-width: 70%;
+        @media (max-width: 780px) {
+          max-width: 270px;
+          margin: 0 auto;
+        }
       }
-      }
+    }
+    &__cta {
+        margin: 0 auto;
+        display: none;
     }
 }
 
@@ -284,12 +323,8 @@ display: block;
   font-size: 14px;
   color: $white;
   background: $purple;
-  padding: 15px 0;
+  padding: 25px 0 30px;
   font-family: $lato;
-  div {
-    height: 20px;
-    padding-bottom: 10px;
-  }
   a {
     color: #b491a8;
     text-decoration: none;
