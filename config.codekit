@@ -277,17 +277,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/ship-1.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 406423,
-		"inputAbbreviatedPath": "\/images\/ship-1.jpg",
-		"outputAbbreviatedPath": "\/images\/ship-1.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/ship-2.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -295,6 +284,17 @@
 		"initialSize": 807695,
 		"inputAbbreviatedPath": "\/images\/ship-2.jpg",
 		"outputAbbreviatedPath": "\/images\/ship-2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/ship-3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 406423,
+		"inputAbbreviatedPath": "\/images\/ship-3.jpg",
+		"outputAbbreviatedPath": "\/images\/ship-3.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
