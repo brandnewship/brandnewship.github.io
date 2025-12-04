@@ -4,6 +4,5 @@
 # Include files that might be excluded
 include:
   - .htaccess
-  - main.css
-  - main.css.map
+  - css/main.css
   - main.js
