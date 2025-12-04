@@ -347,7 +347,7 @@ img {
 .about__content {
   max-width: 1200px;
   margin-left: auto;
-  margin-right: 0;
+  margin-right: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: calc(var(--spacing-unit) * 2);
@@ -357,7 +357,7 @@ img {
 .about__intro {
   background: #fff;
   padding: 40px;
-  margin-top: 200px;
+  margin-top: 20%;
 }
 
 .about__title {
